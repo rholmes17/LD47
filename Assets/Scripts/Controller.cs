@@ -194,6 +194,7 @@ public class Controller : MonoBehaviour
             coolantTemp -= currentTurbineRPM / (actualCoolantFlowRate * coolantDissipationFactor);
             totalPower += currentTurbineRPM * idealPower / idealRPM;
         }
+        else optimalTurbineRPM = 0;
         currentTurbineRPM = Mathf.Lerp(currentTurbineRPM, optimalTurbineRPM, .2f * Time.deltaTime);
 
         availablePower = totalPower;
