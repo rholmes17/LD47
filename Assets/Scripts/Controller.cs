@@ -190,8 +190,8 @@ public class Controller : MonoBehaviour
         }
         if (!isFailedTurbine && actualCoolantFlowRate > 0)
         {
-            optimalTurbineRPM = actualCoolantFlowRate * coolantTemp * turbineSpeedScale * Time.deltaTime;
-            coolantTemp -= currentTurbineRPM / (actualCoolantFlowRate * coolantDissipationFactor);
+            optimalTurbineRPM = actualCoolantFlowRate * coolantTemp * turbineSpeedScale;
+            coolantTemp -= currentTurbineRPM / (actualCoolantFlowRate * coolantDissipationFactor) * Time.deltaTime;
             totalPower += currentTurbineRPM * idealPower / idealRPM;
         }
         else optimalTurbineRPM = 0;

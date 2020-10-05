@@ -1832,7 +1832,7 @@ MonoBehaviour:
   genPower: 50
   genConsumption: 0.03
   coolantHeatCapacity: 0.2
-  coolantDissipationFactor: 10000
+  coolantDissipationFactor: 50
   coolantRadiativeDissipation: 0.0001
   pumpSpoolRate: 0.1
   maxCoolantFlowRate: 1
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   controlRodSpeed: 0.1
   controlRodEffectiveness: 0.05
   controlRodPowerUsage: 150
-  turbineSpeedScale: 10000
+  turbineSpeedScale: 30
   turbineSpoolRate: 0.2
   idealRPM: 3
   idealPower: 100
