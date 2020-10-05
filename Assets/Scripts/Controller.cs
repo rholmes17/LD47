@@ -230,7 +230,7 @@ public class Controller : MonoBehaviour
 
         reactionRate += (controlRodPosition - .5f) * reactorTemp * controlRodEffectiveness * Time.deltaTime;
         reactionRate = Mathf.Clamp01(reactionRate);
-        reactorTemp += reactionRate * reactorTempGrowthRate;
+        reactorTemp += reactionRate * reactorTempGrowthRate * Time.deltaTime;
 
 
         // Reactor cooling

@@ -1830,7 +1830,7 @@ MonoBehaviour:
   maxReactorTemp: 1
   maxRPM: 7
   genPower: 50
-  genConsumption: 0.02
+  genConsumption: 0.03
   coolantHeatCapacity: 0.2
   coolantDissipationFactor: 10000
   coolantRadiativeDissipation: 0.0001
@@ -1840,12 +1840,12 @@ MonoBehaviour:
   maxPumpPower: 50
   initialReactorTemp: 0.2
   baseReactionRate: 0.1
-  reactorTempGrowthRate: 0.0001
+  reactorTempGrowthRate: 0.1
   convectiveHeatCoeff: 0.1
   reactorHeatCapacity: 1
   controlRodSpeed: 0.1
-  controlRodEffectiveness: 0.1
-  controlRodPowerUsage: 100
+  controlRodEffectiveness: 0.05
+  controlRodPowerUsage: 150
   turbineSpeedScale: 10000
   turbineSpoolRate: 0.2
   idealRPM: 3
